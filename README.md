@@ -1,10 +1,12 @@
-# three-line-2d
+# three-line2
+
+This project is fork from [pailhead/three-rounded-box](https://github.com/pailhead/three-rounded-box), to adapte three.js@0.124.0, remove warning of addAttribute.
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-[![img](http://i.imgur.com/7yGGXdd.png)](http://mattdesl.github.io/three-line-2d/)
+[![img](http://i.imgur.com/7yGGXdd.png)](http://aim-leo.github.io/three-line2/)
 
-([click to view demo](http://mattdesl.github.io/three-line-2d/))
+([click to view demo](http://aim-leo.github.io/three-line2/))
 
 A utility for 2D line drawing in ThreeJS, by expanding a polyline in a vertex shader for variable thickness, anti-aliasing, gradients, line dashes, and other GPU effects.
 
@@ -14,8 +16,8 @@ See [test/index.js](test/index.js) for a complete example, as well as other shad
 
 ```js
 var bezier = require('adaptive-bezier-curve');
-var Line = require('three-line-2d')(THREE);
-var BasicShader = require('three-line-2d/shaders/basic')(THREE);
+var Line = require('three-line2')(THREE);
+var BasicShader = require('three-line2/shaders/basic')(THREE);
 
 //build a smooth bezier curve in world units
 var quality = 5;
@@ -37,7 +39,7 @@ app.scene.add(mesh);
 
 ## Usage
 
-[![NPM](https://nodei.co/npm/three-line-2d.png)](https://nodei.co/npm/three-line-2d/)
+[![NPM](https://nodei.co/npm/three-line2.png)](https://nodei.co/npm/three-line2/)
 
 #### `geometry = Line(path, [opt])`
 
@@ -55,8 +57,8 @@ Updates the geometry with the new 2D polyline, which can optionally be a closed 
 ## Running from Source
 
 ```sh
-git clone https://github.com/mattdesl/three-line-2d.git
-cd three-line-2d
+git clone https://github.com/aim-leo/three-line2.git
+cd three-line2
 npm install
 ```
 
@@ -82,4 +84,4 @@ npm run build
 
 ## License
 
-MIT, see [LICENSE.md](http://github.com/mattdesl/three-line-2d/blob/master/LICENSE.md) for details.
+MIT, see [LICENSE.md](http://github.com/aim-leo/three-line2/blob/master/LICENSE.md) for details.
